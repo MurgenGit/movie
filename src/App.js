@@ -4,7 +4,9 @@ import MainMoviePage from './pages/Main'
 import TopRated from './pages/TopRated'
 import Popular from './pages/Popular'
 import Upcoming from './pages/Upcoming'
+import MoviePage from './pages/MoviePage'
 import TopBar from './components/TopBar'
+
 import { Switch, Route,BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
       <Switch>
         <Route path="/" component={MainMoviePage} exact/>
         <Route path="/top-rated" component={TopRated} />
+        <Route path="/movie/:id" component={MoviePage} />
         <Route path="/upcoming" component={Upcoming} />
         <Route path="/popular" component={Popular} />
       </Switch>

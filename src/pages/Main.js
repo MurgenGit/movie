@@ -3,6 +3,7 @@ import axios from 'axios'
 
 import { moviesNowPlaying } from '../fetching/UrlsDB'
 import { Card, Button, Spinner, CardDeck, Container, Row, Col } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 
 function SpinnerShow() {
@@ -39,7 +40,7 @@ const MainMoviePage = () => {
           {data.data.results.map(e => {
             return (
               <Row key={e.id}>
-                <Col lg="auto" md="auto">
+                <Col lg="auto" md="auto" sm="auto">
                   <Card 
                     
                     style={{ width: '12rem', alignItems: 'center', textAlign: 'center'}} 
@@ -56,7 +57,11 @@ const MainMoviePage = () => {
                       <Card.Text>
                         {e.release_date}
                       </Card.Text>
-                      <Button variant="primary">Go somewhere</Button>
+                      <Button variant="primary">
+                        <Link to={{pathname: `/movie/${e.id}`}} style={{color: 'white'}}>
+                          Show More
+                        </Link>
+                      </Button>
                     </Card.Body>
                   </Card>  
                 </Col>

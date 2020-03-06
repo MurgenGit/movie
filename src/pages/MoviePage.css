@@ -1,0 +1,22 @@
+
+
+.span-icon:hover {
+  background-color: lightgreen;
+  color: white;
+}
+.icon-color {
+  color: black;
+}
+.film-length {
+  font-size: 0.7em;
+  font-weight: lighter;
+  color: lightgrey;
+}
+/* .span-icon:after {
+  position: absolute;
+  content: '';
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border: 1px solid blue;
+  border-radius: 50%;
+} */

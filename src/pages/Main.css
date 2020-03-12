@@ -1,0 +1,30 @@
+div.card-columns.movie-list {
+  column-count: 5
+}
+
+.card-columns .card {
+  width: 12rem;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: box-shadow .3s ease-in-out;
+  color: #000;
+}
+.card-columns .card:hover {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card-columns .card > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.card-image-top {
+  margin-top: 4px;
+}
+.main-page-card {
+  align-items: center;
+  text-align: center;
+  border: none;
+  padding-top: 4px;
+}
